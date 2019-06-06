@@ -10,5 +10,9 @@ import { Input } from "./input";
 storiesOf("Input", module).add("Simple input", () => (
     <div>
         <Input placeholder="email" />
+        <Input placeholder="email" helperText="Enter valid email" />
+        <Input placeholder="email" defaultValue="default@value.com" />
+        <Input placeholder="password" type="password" />
+        <Input placeholder="email" error errorText="Provide valid email" />
     </div>
 ));
